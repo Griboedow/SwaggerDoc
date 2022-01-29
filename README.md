@@ -20,5 +20,5 @@ To use it, you need to
 {{#tag:SwaggerDoc||specUrl=http://MyWiki/index.php/MySwaggerJsonSpec?action=raw}}
 ```
 
--Save page and refresh it. You will see:
+- Save page and refresh it. You will see:
 ![Capture](https://user-images.githubusercontent.com/4194526/151668487-2ec107d3-befa-4f6c-9efc-c08286d9441d.PNG)
