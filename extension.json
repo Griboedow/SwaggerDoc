@@ -1,0 +1,56 @@
+{
+	"name": "Swagger doc",
+	"version": "0.1.0",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:Urfiner Urfiner]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:SwaggerDoc",
+	"descriptionmsg": "swaggerdoc-description",
+	"license-name": "MIT",
+	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"MessagesDirs": {
+		"SwaggerDoc": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"SwaggerDocHooks": "SwaggerDoc.hooks.php"
+	},
+	"ResourceModules": {
+		"ext.SwaggerDoc.init": {
+			"scripts": [
+				"js/addSwaggerDocFrame.js"
+			],
+			"dependencies": [
+				"ext.SwaggerDoc.swagger_ui"
+			],
+			"styles": [
+				"css/SwaggerSpecStyles.css"
+			]
+		},
+		"ext.SwaggerDoc.swagger_ui": {
+			"scripts": [
+				"js/swagger-ui-bundle.js",
+				"js/swagger-ui-standalone-preset.js"
+			],
+			"styles": [
+				"css/swagger-ui.css"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "SwaggerDocSwaggerDoc"
+	},
+	"Hooks": {
+		"OutputPageParserOutput": "SwaggerDocHooks::onBeforeHtmlAddedToOutput",
+		"ParserFirstCallInit": "SwaggerDocHooks::onParserSetup"
+	},
+	"ConfigRegistry": {
+		"SwaggerDoc": "GlobalVarConfig::newInstance"
+	},
+	"manifest_version": 2
+}

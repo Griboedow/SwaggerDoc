@@ -1,0 +1,6 @@
+{
+	"@metadata": {
+		"authors": [ "[https://www.mediawiki.org/wiki/User:Urfiner Urfiner]" ]
+	},
+	"swaggerdoc-description": "The NewPageTemplateSelector extension provides a tag to insert 'create page' input box with a dropdown of templates to preload"
+}

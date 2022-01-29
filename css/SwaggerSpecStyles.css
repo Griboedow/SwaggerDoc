@@ -1,0 +1,27 @@
+iframe {
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    width:100%
+}
+
+.swagger-iframe-container{
+    max-width:100%;
+    width:100%;
+}
+
+.microlight > code {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-family: Consolas,monaco,monospace;
+}
+
+pre.version {
+	border: none!important;
+	background-color: transparent!important;
+}
+
+h2.title {
+	line-height: 1.6;
+}
