@@ -43,7 +43,7 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteExtPath": "SwaggerDocSwaggerDoc"
+		"remoteExtPath": "SwaggerDoc"
 	},
 	"Hooks": {
 		"OutputPageParserOutput": "SwaggerDocHooks::onBeforeHtmlAddedToOutput",

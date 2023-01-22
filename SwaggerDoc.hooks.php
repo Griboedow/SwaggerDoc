@@ -10,7 +10,7 @@
 class SwaggerDocHooks
 {
 	public static function onBeforeHtmlAddedToOutput( OutputPage &$out, ParserOutput $parserOutput ) {
-		$out->addModules( 'ext.SwaggerDoc.init' );
+		$out->addModules( "ext.SwaggerDoc.init" );
 		return true;
 	}
 
