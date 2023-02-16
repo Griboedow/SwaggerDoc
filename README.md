@@ -1,23 +1,25 @@
 # SwaggerDoc
-Mediawiki extension to provide swagger ui frontend for any swagger specification 
+
+Mediawiki extension to provide swagger ui frontend for any swagger specification.
 
 To install, clone the extension and add to **LocalSettings.php**:
 
 ```php
-wfLoadExtension( 'SwaggerDoc' );
+wfLoadExtension('SwaggerDoc');
 ```
 
 # Usage
-To use it, you need to 
+
+To use it, you need to
 - Create a wikipage (for example, **MySwaggerJsonSpec** page) with swagger spec (json file). You may also want to change wikipage schema to JSON but that is not mandatory
-- On another wikipage insert Swagger doc with either **specUrl** or **specUrls** arguments:
+- On another wikipage insert Swagger doc tag with either **specUrl** or **specUrls** arguments:
 
 ```html
-{{#tag:SwaggerDoc||specUrls=[{'url': 'http://MyWiki/index.php/MySwaggerJsonSpec?action=raw', 'name': 'My swagger spec'}]}}
+<SwaggerDoc specUrls="[{'url': 'http://MyWiki/index.php/MySwaggerJsonSpec?action=raw', 'name': 'My swagger spec'}]" />
 ```
 
 ```html
-{{#tag:SwaggerDoc||specUrl=http://MyWiki/index.php/MySwaggerJsonSpec?action=raw}}
+<SwaggerDoc specUrl="http://MyWiki/index.php/MySwaggerJsonSpec?action=raw" />
 ```
 
 - Save page and refresh it. You will see:
