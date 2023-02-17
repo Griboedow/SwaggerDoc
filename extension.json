@@ -2,15 +2,13 @@
 	"name": "Swagger doc",
 	"version": "0.1.0",
 	"author": [
-		"[https://www.mediawiki.org/wiki/User:Urfiner Urfiner]"
+		"[https://www.mediawiki.org/wiki/User:Urfiner Urfiner]",
+		"Vitaliy Filippov"
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:SwaggerDoc",
 	"descriptionmsg": "swaggerdoc-description",
 	"license-name": "MIT",
 	"type": "parserhook",
-	"requires": {
-		"MediaWiki": ">= 1.29.0"
-	},
 	"MessagesDirs": {
 		"SwaggerDoc": [
 			"i18n"
@@ -46,11 +44,9 @@
 		"remoteExtPath": "SwaggerDoc"
 	},
 	"Hooks": {
-		"OutputPageParserOutput": "SwaggerDocHooks::onBeforeHtmlAddedToOutput",
 		"ParserFirstCallInit": "SwaggerDocHooks::onParserSetup"
 	},
 	"ConfigRegistry": {
 		"SwaggerDoc": "GlobalVarConfig::newInstance"
-	},
-	"manifest_version": 2
+	}
 }
