@@ -9,6 +9,9 @@
 	"descriptionmsg": "swaggerdoc-description",
 	"license-name": "MIT",
 	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.25.0"
+	},
 	"MessagesDirs": {
 		"SwaggerDoc": [
 			"i18n"
@@ -49,5 +52,5 @@
 	"ConfigRegistry": {
 		"SwaggerDoc": "GlobalVarConfig::newInstance"
 	},
-	"manifest_version": 2
+	"manifest_version": 1
 }
