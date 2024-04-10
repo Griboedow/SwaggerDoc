@@ -12,6 +12,7 @@ wfLoadExtension('SwaggerDoc');
 
 To use it, you need to
 - Create a wikipage (for example, **MySwaggerJsonSpec** page) with swagger spec (json file). You may also want to change wikipage schema to JSON but that is not mandatory
+  - Alternatively, you can upload your spec as a file 
 - On another wikipage insert Swagger doc tag with either **specUrl** or **specUrls** arguments. <br/><br/> Please note that URL should be a link to the raw JSON (not to a page containing it); typically that is achievable by adding ```?action=raw``` to the URL:
 
 ```html
