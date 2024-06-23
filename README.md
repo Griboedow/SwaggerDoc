@@ -1,6 +1,6 @@
 # SwaggerDoc
 
-Mediawiki extension to provide swagger ui frontend for any swagger specification.
+[Mediawiki extension](https://www.mediawiki.org/wiki/Extension:SwaggerDoc) to provide swagger ui frontend for any swagger specification.
 
 To install, clone the extension and add to **LocalSettings.php**:
 
