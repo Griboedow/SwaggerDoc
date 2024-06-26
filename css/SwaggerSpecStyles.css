@@ -25,3 +25,11 @@ pre.version {
 h2.title {
 	line-height: 1.6;
 }
+
+.opblock-summary-path{
+    max-width: 100% !important;
+}
+
+.opblock-summary-description{
+    padding: 0 10px;
+}
