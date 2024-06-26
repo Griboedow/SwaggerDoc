@@ -33,7 +33,7 @@ class SwaggerDocHooks
 		else
 			$specUrls = '';
 
-		$parser->getOutput()->addModules('ext.SwaggerDoc.init');
+		$parser->getOutput()->addModules(['ext.SwaggerDoc.init']);
 
 		// Add div which will be processed on frontend
 		$outHtml = '<div';
